@@ -6,5 +6,5 @@ This is a simple Python-based web server running in a Docker container, served v
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/yourrepo.git
-   cd yourrepo
+   git clone https://github.com/ayangaur26/JunkyardCustomContainer.git
+   cd JunkyardCustomContainer
