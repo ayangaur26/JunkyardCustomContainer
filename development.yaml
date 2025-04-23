@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: custom-web-server-deployment
+spec:
+  replicas: 2  # Number of replicas (phones in your case)
+  selector:
+    matchLabels:
+      app: custom-web-server
+  template:
+    metadata:
+      labels:
+        app: custom-web-server
+    spec:
+      containers:
+      - name: custom-web-server
+        image: aygaur/custom-web-server:latest  # Replace with your image name
+        ports:
+        - containerPort: 8080
