@@ -17,7 +17,7 @@ COPY ./app /app
 WORKDIR /app
 
 # Install Python dependencies (if you have a requirements.txt)
-RUN pip3 install -r requirements.txt
+# RUN pip3 install -r requirements.txt
 
 # Expose the port the app will run on
 EXPOSE 8080
